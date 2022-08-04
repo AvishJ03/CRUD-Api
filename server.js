@@ -22,7 +22,9 @@ mongoose
   });
 
 app.get("/", (req, res) => {
-  console.log("Hello");
+  res.json({
+    message: "Hello.",
+  });
 });
 
 const router = require("./app/routes");
